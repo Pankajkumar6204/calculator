@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcyan;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container{
+    margin: 110px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: rgb(223, 172, 43);
+}
+.button-body{
+    width: 410px;
+    border: 2px solid black;
+    border-radius: 14px;
+    background: transparent;
+    background-color:rgb(159, 245, 238);
+    box-shadow: 0px 8px 16px rgba(219, 167, 227, 0.5);
+}
+.button-body input{
+    width: 340px;
+    border: none;
+    padding: 16px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 10px 18px 36px rgba(11, 11, 12, 0.2);
+    background-color: lightblue;
+    font-size: 34px;
+    text-align: right;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+input::placeholder{
+    color: #090909;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 12px;
+    border-radius: 10%;
+    color: #101010;
+    font-size: 21px;
+    background-color:lightblue;
+}
+button:hover{
+    border: 1px solid rgb(229, 245, 6) ;
+    background-color: rgb(88, 88, 86);
+}
+.operator{
+    background-color: cornflowerblue;
+}
+.equalBtn{
+    background-color: rgb(34, 104, 233);
+}
+
+/* For Responsive website */
+@media all and (max-width:767px) {
+    body{
+        background-color: rgb(218, 159, 234);
+    }
+    .heading{
+        color: rgb(223, 217, 220);
+        font-size: 18px;
+    }
+    .button-body{
+        width: 360px;
+    }
+    .button-body input{
+        width: 298px;
+        padding: 12px;
+        margin: 10px;
+        background: transparent;
+        box-shadow: 10px 18px 36px rgba(11, 11, 12, 0.2);
+        background-color: rgb(150, 209, 229);
+        font-size: 28px;
+        text-align: right;
+        cursor: pointer;
+        margin-left: 25px;
+    }
+    button{
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 48px;
+        border: 1px solid red;
+        margin: 12px;
+        border-radius: 10%;
+        color: #101010;
+        font-size: 18px;
+        background-color:lightblue;
+    }
+}
